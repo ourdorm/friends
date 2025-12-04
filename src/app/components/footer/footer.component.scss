@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px dashed var(--ctp-surface1);
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+
+  p {
+    width: 100%;
+    max-width: 70ch;
+    text-align: center;
+    margin: 0;
+    color: var(--ctp-subtext0);
+    font-size: 0.875rem;
+    font-family: monospace;
+  }
+}

@@ -1,0 +1,46 @@
+section {
+  .avatar-container {
+    margin: 1rem 0;
+  }
+
+  .avatar {
+    width: 88px;
+    height: 88px;
+    border: 1px solid var(--ctp-surface1);
+    image-rendering: pixelated;
+  }
+
+  .box {
+    background: var(--ctp-mantle);
+    border: 1px solid var(--ctp-surface0);
+    padding: 1rem;
+    margin: 1rem 0;
+
+    h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .muted {
+    color: var(--ctp-subtext0);
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .small {
+    font-size: 0.875rem;
+  }
+}

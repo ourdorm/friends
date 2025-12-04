@@ -1,0 +1,237 @@
+@layer base, utils, components;
+
+/* WebTUI */
+@import '@webtui/css/full.css';
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Enable Cross-Document View Transitions */
+@view-transition {
+  navigation: auto;
+}
+
+/* Catppuccin Palette */
+@import '@catppuccin/palette/css/catppuccin.css';
+
+/* Catppuccin Mocha (Default Dark) */
+:root {
+  --ctp-base: var(--ctp-mocha-base);
+  --ctp-mantle: var(--ctp-mocha-mantle);
+  --ctp-crust: var(--ctp-mocha-crust);
+  --ctp-surface0: var(--ctp-mocha-surface0);
+  --ctp-surface1: var(--ctp-mocha-surface1);
+  --ctp-surface2: var(--ctp-mocha-surface2);
+  --ctp-overlay0: var(--ctp-mocha-overlay0);
+  --ctp-overlay1: var(--ctp-mocha-overlay1);
+  --ctp-overlay2: var(--ctp-mocha-overlay2);
+  --ctp-text: var(--ctp-mocha-text);
+  --ctp-subtext0: var(--ctp-mocha-subtext0);
+  --ctp-subtext1: var(--ctp-mocha-subtext1);
+  --ctp-mauve: var(--ctp-mocha-mauve);
+  --ctp-red: var(--ctp-mocha-red);
+
+  --ctp-mauve-dim: #b4a5dc;
+  --link-visited: #ddb6f2;
+}
+
+/* Catppuccin Latte (Light) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --ctp-base: var(--ctp-latte-base);
+    --ctp-mantle: var(--ctp-latte-mantle);
+    --ctp-crust: var(--ctp-latte-crust);
+    --ctp-surface0: var(--ctp-latte-surface0);
+    --ctp-surface1: var(--ctp-latte-surface1);
+    --ctp-surface2: var(--ctp-latte-surface2);
+    --ctp-overlay0: var(--ctp-latte-overlay0);
+    --ctp-overlay1: var(--ctp-latte-overlay1);
+    --ctp-overlay2: var(--ctp-latte-overlay2);
+    --ctp-text: var(--ctp-latte-text);
+    --ctp-subtext0: var(--ctp-latte-subtext0);
+    --ctp-subtext1: var(--ctp-latte-subtext1);
+    --ctp-mauve: var(--ctp-latte-mauve);
+    --ctp-red: var(--ctp-latte-red);
+
+    --ctp-mauve-dim: #7229c9;
+    --link-visited: #7229c9;
+  }
+}
+
+/* Base */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--ctp-mantle);
+  color: var(--ctp-text);
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+/* App layout */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--ctp-mantle);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  /* Assign a view-transition-name to the main content */
+  view-transition-name: main-content;
+}
+
+main > * {
+  width: 100%;
+  max-width: 70ch;
+}
+
+/* Customize the transition for main-content */
+::view-transition-old(main-content) {
+  animation: fade-out 0.3s ease-in-out both;
+}
+
+::view-transition-new(main-content) {
+  animation: fade-in 0.3s ease-in-out both;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links */
+a {
+  color: var(--ctp-mauve);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ctp-mauve-dim);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+/* Headers */
+h1,
+h2 {
+  color: var(--ctp-mauve);
+  font-family: monospace;
+}
+
+/* Code */
+code {
+  background: var(--ctp-surface0);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--ctp-crust);
+  color: var(--ctp-text);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ctp-surface0);
+  overflow-x: auto;
+}
+
+/* Separator */
+hr {
+  border: none;
+  border-top: 1px dashed var(--ctp-surface1);
+  margin: 1.5rem 0;
+}
+
+/* Header component */
+app-header-component {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Footer component */
+app-footer-component {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Section centering */
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Muted text */
+.muted {
+  color: var(--ctp-subtext0);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+li {
+  color: var(--ctp-subtext0);
+}
+p {
+  color: var(--ctp-subtext0);
+}
+/* Box styling */
+.box {
+  background: var(--ctp-base);
+  border: 1px solid var(--ctp-surface0);
+  padding: 1rem;
+  margin: 1rem 0;
+
+  h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  p,
+  pre {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

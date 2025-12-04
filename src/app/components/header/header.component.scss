@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px dashed var(--ctp-surface1);
+  display: flex;
+  justify-content: center;
+
+  nav {
+    width: 100%;
+    max-width: 70ch;
+    display: flex;
+    justify-content: center; /* Center the links within the max-width container */
+    gap: 1ch;
+    font-family: monospace;
+
+    .sep {
+      color: var(--ctp-surface2);
+    }
+  }
+}

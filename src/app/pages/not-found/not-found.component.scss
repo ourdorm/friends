@@ -1,0 +1,31 @@
+section.center {
+  text-align: center;
+
+  .big {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .muted {
+    color: var(--ctp-subtext0);
+  }
+
+  .error {
+    text-align: left;
+    display: inline-block;
+    background: var(--ctp-mantle);
+    border: 1px solid var(--ctp-surface0);
+    padding: 1rem;
+    color: var(--ctp-subtext0);
+    font-size: 0.875rem;
+  }
+
+  nav {
+    text-align: left;
+    display: inline-block;
+
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<section>
+  <h1>~/services</h1>
+  <p class="muted">Hosted tools and places to explore around dorm.social.</p>
+
+  <hr />
+
+  <div class="box">
+    <h2>## service directory</h2>
+    <ul class="service-list">
+      @for (service of services; track service.label) {
+        <li class="service-item">
+          <div class="service-content">
+            <a [href]="service.url" rel="noreferrer" target="_blank">{{ service.label }}</a>
+            @if (service.note) {
+              <span class="muted">— {{ service.note }}</span>
+            }
+            @if (service.offline) {
+              <span class="badge offline">offline</span>
+            }
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <hr />
+
+  <p class="muted small"><a routerLink="/"><- back to /</a></p>
+</section>

@@ -1,0 +1,12 @@
+.user-card {
+  margin: 0.25rem 0;
+  font-family: monospace;
+
+  a {
+    font-weight: bold;
+  }
+
+  .muted {
+    color: var(--ctp-subtext0);
+  }
+}

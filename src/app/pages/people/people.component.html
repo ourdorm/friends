@@ -1,0 +1,18 @@
+<section>
+  <h1>~/people</h1>
+  <p class="muted">Community members of <code>friends.dorm.social</code></p>
+
+  <hr />
+
+  <pre class="muted small">drwxr-xr-x  {{ users.length }} users  {{ users.length }} entries</pre>
+
+  <div class="user-list">
+    @for (user of users; track user.username) {
+      <app-user-card [user]="user"></app-user-card>
+    }
+  </div>
+
+  <hr />
+
+  <p class="muted small"><a routerLink="/"><- back to /</a></p>
+</section>
