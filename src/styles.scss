@@ -10,10 +10,6 @@
   box-sizing: border-box;
 }
 
-/* Enable Cross-Document View Transitions */
-@view-transition {
-  navigation: auto;
-}
 
 /* Catppuccin Palette */
 @import '@catppuccin/palette/css/catppuccin.css';
@@ -88,44 +84,11 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  /* Assign a view-transition-name to the main content */
-  view-transition-name: main-content;
 }
 
-main > * {
+main>* {
   width: 100%;
   max-width: 70ch;
-}
-
-/* Customize the transition for main-content */
-::view-transition-old(main-content) {
-  animation: fade-out 0.3s ease-in-out both;
-}
-
-::view-transition-new(main-content) {
-  animation: fade-in 0.3s ease-in-out both;
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Links */
@@ -209,9 +172,11 @@ section {
 li {
   color: var(--ctp-subtext0);
 }
+
 p {
   color: var(--ctp-subtext0);
 }
+
 /* Box styling */
 .box {
   background: var(--ctp-base);
