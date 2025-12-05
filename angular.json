@@ -42,7 +42,10 @@
             "prerender": {
               "discoverRoutes": true
             },
-            "ssr": false
+            "ssr": {
+              "entry": "src/main.server.ts"
+            },
+            "outputMode": "static"
           },
           "configurations": {
             "production": {
