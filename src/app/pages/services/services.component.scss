@@ -82,32 +82,61 @@ section {
     }
 
     &.jasper {
-      border-color: #ff9d57;
+      border-color: #dd6f2d;
       background: #2f1f15;
       color: #ff9d57;
+
+      @media (prefers-color-scheme: light) {
+        background: #fff3eb;
+        color: #a64d1a;
+        border-color: #dd6f2d;
+      }
     }
 
     &.pages {
-      border-color: #ffd257;
+      border-color: #d4a72c;
       background: #2f2715;
       color: #ffd257;
+
+      @media (prefers-color-scheme: light) {
+        background: #fffbeb;
+        color: #8a6d1a;
+        border-color: #d4a72c;
+      }
     }
 
     &.enterprise {
       border-color: #5776ff;
       background: #151c2f;
       color: #5776ff;
+
+      @media (prefers-color-scheme: light) {
+        background: #eef1ff;
+        color: #3b52cc;
+        border-color: #5776ff;
+      }
     }
 
     &.basalt {
       border-color: #6c6f85;
       background: #1b1b23;
       color: #dce0e8;
+
+      @media (prefers-color-scheme: light) {
+        background: #f0f0f3;
+        color: #4c4f5e;
+        border-color: #6c6f85;
+      }
     }
 
     &.status {
-      border-color: #a6e3a1;
+      border-color: #40a02b;
       color: #a6e3a1;
+
+      @media (prefers-color-scheme: light) {
+        color: #40a02b;
+        border-color: #40a02b;
+      }
     }
   }
 }
@@ -134,5 +163,22 @@ section {
 
   &:hover {
     text-decoration: underline dashed;
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  section {
+    .service-content {
+      gap: 0.25rem;
+    }
+
+    .service-main .muted {
+      display: none;
+    }
+
+    .service-tags {
+      margin-left: 0;
+    }
   }
 }
