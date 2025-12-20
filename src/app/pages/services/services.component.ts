@@ -35,7 +35,13 @@ export class ServicesComponent {
       host: 'jasper',
       status: 'active',
     },
-
+    {
+      label: 'auth.dorm.social',
+      url: 'https://auth.dorm.social/',
+      note: 'VoidAuth',
+      host: 'jasper',
+      status: 'active',
+    },
     {
       label: 'cloud.dorm.social',
       url: 'https://cloud.dorm.social',
