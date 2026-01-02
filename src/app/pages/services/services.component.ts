@@ -57,6 +57,13 @@ export class ServicesComponent {
       status: 'active',
     },
     {
+      label: 'ask.dorm.social',
+      url: 'https://ask.dorm.social',
+      note: 'askjs',
+      host: 'jasper',
+      status: 'active',
+    },
+    {
       label: 'friends.dorm.social',
       url: 'https://friends.dorm.social',
       note: '> You are Here',

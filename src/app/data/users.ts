@@ -21,7 +21,7 @@ export const users: User[] = [
     username: 'irisnk',
     bioShort: 'Indie artist, dev, and soul.',
     bioLong: `More about me on my website`,
-    avatar: 'https://irisnk.me/index/pfp.png',
+    avatar: '/pfp/irisnk.png',
     links: [
       { label: 'website', url: 'https://irisnk.me' },
       { label: 'git', url: 'https://git.elrant.team/irisnk' },
@@ -32,7 +32,7 @@ export const users: User[] = [
     username: 'emiliank',
     bioShort: 'blue sharkie fan!!',
     bioLong: `hi im emilia and i like girls`,
-    avatar: 'https://avatars.githubusercontent.com/u/66714101?v=4',
+    avatar: '/pfp/emiliank.jpg',
     links: [
       { label: 'dormsoc', url: 'https://dorm.social/@emilia' },
       { label: 'github', url: 'https://github.com/orbitaldusk' },
@@ -44,7 +44,7 @@ export const users: User[] = [
     username: 'liawr',
     bioShort: 'certified catgirl™',
     bioLong: `touching puters unprofessionally ~`,
-    avatar: 'https://avatars.githubusercontent.com/u/153860025?v=4',
+    avatar: '/pfp/liawr.png',
     links: [
       { label: 'subq', url: 'https://subq.een.today/@liawr' },
       { label: 'dorm', url: 'https://dorm.social/@liawr' },
@@ -56,7 +56,7 @@ export const users: User[] = [
     username: 'abbyfluoroethane',
     bioShort: 'cat space mechanic',
     bioLong: `i like girls, things that fly, and pizza. in that order.`,
-    avatar: 'https://avatars.githubusercontent.com/u/53389189?v=4',
+    avatar: '/pfp/abbyfluoroethane.jpg',
     links: [
       { label: 'website', url: 'https://bigaouette.com' },
       { label: 'fedi | dormsoc', url: 'https://dorm.social/@abbyfluoroethane' },
