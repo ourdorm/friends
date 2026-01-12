@@ -21,6 +21,13 @@ interface ServiceLink {
 export class ServicesComponent {
   services: ServiceLink[] = [
     {
+      label: 'friends.dorm.social',
+      url: 'https://friends.dorm.social',
+      note: '> You are Here',
+      host: 'pages',
+      status: 'active',
+    },
+    {
       label: 'dorm.social',
       url: 'https://dorm.social',
       note: 'our turtkey/fediverse instance',
@@ -61,13 +68,6 @@ export class ServicesComponent {
       url: 'https://ask.dorm.social',
       note: 'askjs',
       host: 'jasper',
-      status: 'active',
-    },
-    {
-      label: 'friends.dorm.social',
-      url: 'https://friends.dorm.social',
-      note: '> You are Here',
-      host: 'pages',
       status: 'active',
     },
 
