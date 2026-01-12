@@ -23,7 +23,7 @@ export class ServicesComponent {
     {
       label: 'friends.dorm.social',
       url: 'https://friends.dorm.social',
-      note: '> You are Here',
+      note: '> you are here',
       host: 'pages',
       status: 'active',
     },
@@ -36,19 +36,20 @@ export class ServicesComponent {
     },
     { label: 'git.elrant.team', url: 'https://git.elrant.team', note: 'forgejo', host: 'jasper', status: 'active' },
     {
+      label: 'auth.dorm.social',
+      url: 'https://auth.dorm.social/',
+      note: 'voidauth',
+      host: 'jasper',
+      status: 'active',
+    },
+    {
       label: 'radio.dorm.social',
       url: 'https://radio.dorm.social/public/radio',
       note: 'azuracast',
       host: 'jasper',
       status: 'active',
     },
-    {
-      label: 'auth.dorm.social',
-      url: 'https://auth.dorm.social/',
-      note: 'VoidAuth',
-      host: 'jasper',
-      status: 'active',
-    },
+
     {
       label: 'cloud.dorm.social',
       url: 'https://cloud.dorm.social',
