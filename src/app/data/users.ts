@@ -44,7 +44,7 @@ export const users: User[] = [
     username: 'liawr',
     bioShort: 'certified catgirl™',
     bioLong: `touching puters unprofessionally ~`,
-    avatar: '/pfp/liawr.png',
+    avatar: '/pfp/liawr.jpg',
     links: [
       { label: 'subq', url: 'https://subq.een.today/@liawr' },
       { label: 'dorm', url: 'https://dorm.social/@liawr' },
