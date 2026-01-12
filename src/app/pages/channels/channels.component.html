@@ -1,0 +1,39 @@
+<section>
+  <h1>~/channels</h1>
+  <p class="muted">Places to chat with the dorm community.</p>
+
+  <hr />
+
+  <div class="box">
+    <h2>## dormcord</h2>
+    <p>Main hub for chats, game nights and announcements.</p>
+    <p>
+      <a [href]="discordInvite" class="channel-link" rel="noreferrer" target="_blank">join dormcord -></a>
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>## dormmatrix</h2>
+    <p>End-to-end encrypted bridge for privacy-focused dorm residents.</p>
+    <p><a [href]="dormmatrixInvite" class="channel-link" rel="noreferrer" target="_blank">join dormmatrix -></a></p>
+  </div>
+
+  <div class="box">
+    <h2>## signal groups</h2>
+    <p>Group chats for secure shitposting with free stickers.</p>
+    <ul class="channel-list">
+      @for (group of signalGroups; track group.name) {
+      <li>
+        <a [href]="group.url" class="channel-link" rel="noreferrer" target="_blank">{{ group.name }}</a>
+        @if (group.description) {
+        <span class="muted">— {{ group.description }}</span>
+        }
+      </li>
+      }
+    </ul>
+  </div>
+
+  <hr />
+
+  <p class="muted small"><a routerLink="/"><- back to /</a></p>
+</section>

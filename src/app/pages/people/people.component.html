@@ -1,6 +1,6 @@
 <section>
   <h1>~/people</h1>
-  <p class="muted">Community members of <code>friends.dorm.social</code></p>
+  <p class="muted">Residents that opted in to appear on <code>friends.dorm.social</code></p>
 
   <hr />
 
@@ -8,7 +8,7 @@
 
   <div class="user-list">
     @for (user of users; track user.username) {
-      <app-user-card [user]="user"></app-user-card>
+    <app-user-card [user]="user"></app-user-card>
     }
   </div>
 
