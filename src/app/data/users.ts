@@ -41,18 +41,6 @@ export const users: User[] = [
     ],
   },
   {
-    username: 'liawr',
-    bioShort: 'certified catgirl™',
-    bioLong: `touching puters unprofessionally ~`,
-    avatar: '/pfp/liawr.jpg',
-    links: [
-      { label: 'subq', url: 'https://subq.een.today/@liawr' },
-      { label: 'dorm', url: 'https://dorm.social/@liawr' },
-      { label: 'git', url: 'https://git.een.today/liawr' },
-      { label: 'site', url: 'https://liawr.gay' },
-    ],
-  },
-  {
     username: 'abbyfluoroethane',
     bioShort: 'cat space mechanic',
     bioLong: `i like girls, things that fly, and pizza. in that order.`,
