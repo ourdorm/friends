@@ -38,22 +38,28 @@ export class ServicesComponent {
     {
       label: 'auth.dorm.social',
       url: 'https://auth.dorm.social/',
-      note: 'voidauth',
+      note: 'voidauth for SSO',
       host: 'jasper',
       status: 'active',
     },
     {
       label: 'radio.dorm.social',
       url: 'https://radio.dorm.social/public/radio',
-      note: 'azuracast',
+      note: 'azuracast instance',
       host: 'jasper',
       status: 'active',
     },
-
+    {
+      label: 'pronouns.dorm.social',
+      url: 'https://pronouns.dorm.social/',
+      note: 'pronouns.cc instance',
+      host: 'jasper',
+      status: 'active',
+    },
     {
       label: 'cloud.dorm.social',
       url: 'https://cloud.dorm.social',
-      note: 'nextcloud',
+      note: 'nextcloud instance',
       host: 'jasper',
       status: 'active',
     },
@@ -67,7 +73,7 @@ export class ServicesComponent {
     {
       label: 'ask.dorm.social',
       url: 'https://ask.dorm.social',
-      note: 'askjs',
+      note: 'askjs instance',
       host: 'jasper',
       status: 'active',
     },
