@@ -1,14 +1,16 @@
 // @ts-check
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 
-export default tseslint.config(
+export default defineConfig([
   {
     ignores: ['dist/**', 'node_modules/**', '.angular'],
   },
+
   {
     files: ['**/*.ts'],
     extends: [
@@ -43,16 +45,21 @@ export default tseslint.config(
         'error',
         {
           printWidth: 120,
-          htmlWhitespaceSensitivity: 'strict',
+          htmlWhitespaceSensitivity: 'ignore',
           bracketSameLine: true,
           singleAttributePerLine: false,
+          proseWrap: 'preserve',
         },
       ],
     },
   },
+
   {
     files: ['**/*.html'],
-    extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
+    extends: [
+      ...angular.configs.templateRecommended,
+      ...angular.configs.templateAccessibility,
+    ],
     rules: {},
   },
-);
+]);
