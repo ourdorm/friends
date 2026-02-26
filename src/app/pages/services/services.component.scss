@@ -105,6 +105,18 @@ section {
       }
     }
 
+    &.starlit {
+      border-color: #ae57ff;
+      background: #22152f;
+      color: #ae57ff;
+
+      @media (prefers-color-scheme: light) {
+        background: #f9eeff;
+        color: #a33bcc;
+        border-color: #ae57ff;
+      }
+    }
+
     &.enterprise {
       border-color: #5776ff;
       background: #151c2f;

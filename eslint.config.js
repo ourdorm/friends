@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier';
 
 export default tseslint.config(
   {
-    ignores: ['src/app/assets/tumblr-bak/**', 'dist/**', 'node_modules/**', '.angular'],
+    ignores: ['dist/**', 'node_modules/**', '.angular'],
   },
   {
     files: ['**/*.ts'],

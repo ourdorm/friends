@@ -16,12 +16,12 @@
     <p>Group chats for secure shitposting with free stickers.</p>
     <ul class="channel-list">
       @for (group of signalGroups; track group.name) {
-      <li>
-        <a [href]="group.url" class="channel-link" rel="noreferrer" target="_blank">{{ group.name }}</a>
-        @if (group.description) {
-        <span class="muted">— {{ group.description }}</span>
-        }
-      </li>
+        <li>
+          <a [href]="group.url" class="channel-link" rel="noreferrer" target="_blank">{{ group.name }}</a>
+          @if (group.description) {
+            <span class="muted">— {{ group.description }}</span>
+          }
+        </li>
       }
     </ul>
   </div>

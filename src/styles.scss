@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 
-
 /* Catppuccin Palette */
 @import '@catppuccin/palette/css/catppuccin.css';
 
@@ -86,7 +85,7 @@ main {
   padding: 2rem 1rem;
 }
 
-main>* {
+main > * {
   width: 100%;
   max-width: 70ch;
 }
