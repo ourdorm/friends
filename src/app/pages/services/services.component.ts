@@ -7,7 +7,7 @@ interface ServiceLink {
   url?: string;
   note?: string;
   offline?: boolean;
-  host?: 'jasper' | 'basalt' | 'enterprise' | 'pages' | 'starlit';
+  host?: 'jasper' | 'basalt' | 'enterprise' | 'pages';
   status?: 'active';
 }
 
@@ -31,7 +31,7 @@ export class ServicesComponent {
       label: 'dorm.social',
       url: 'https://dorm.social',
       note: 'our turtkey/fediverse instance',
-      host: 'starlit',
+      host: 'jasper',
       status: 'active',
     },
     { label: 'git.elrant.team', url: 'https://git.elrant.team', note: 'forgejo', host: 'jasper', status: 'active' },
