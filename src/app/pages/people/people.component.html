@@ -4,12 +4,14 @@
 
   <hr />
 
-  <pre class="muted small">drwxr-xr-x  {{ users.length }} users  {{ users.length }} entries</pre>
+  <div class="box">
+    <pre class="muted small">drwxr-xr-x  {{ users.length }} users  {{ users.length }} entries</pre>
 
-  <div class="user-list">
-    @for (user of users; track user.username) {
+    <div class="user-list">
+      @for (user of users; track user.username) {
       <app-user-card [user]="user"></app-user-card>
-    }
+      }
+    </div>
   </div>
 
   <hr />
