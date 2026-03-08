@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "friends.dorm.social",
+  "short_name": "friends",
   "icons": [
     {
       "src": "/favicon/web-app-manifest-192x192.png",
