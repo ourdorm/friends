@@ -15,7 +15,7 @@ interface SignalGroup {
   styleUrls: ['./channels.component.scss'],
 })
 export class ChannelsComponent {
-  discordInvite = 'https://discord.gg/ccWJu4xXR6';
+  discordInvite = 'https://discord.gg/mghfA6BveG';
 
   signalGroups: SignalGroup[] = [
     {
