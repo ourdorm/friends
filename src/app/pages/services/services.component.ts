@@ -43,13 +43,6 @@ export class ServicesComponent {
       status: 'active',
     },
     {
-      label: 'radio.dorm.social',
-      url: 'https://radio.dorm.social/public/radio',
-      note: 'azuracast instance',
-      host: 'jasper',
-      status: 'active',
-    },
-    {
       label: 'pronouns.dorm.social',
       url: 'https://pronouns.dorm.social/',
       note: 'pronouns.cc instance',
