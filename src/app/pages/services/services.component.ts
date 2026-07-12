@@ -78,6 +78,13 @@ export class ServicesComponent {
       status: 'active',
     },
     {
+      label: 'element.dorm.social',
+      url: 'https://element.dorm.social/',
+      note: 'element, web gui for matrix',
+      host: 'jasper',
+      status: 'active',
+    },
+    {
       label: 'mumble.dorm.social',
       url: 'mumble://mumble.dorm.social',
       note: 'murmurd, no web gui',
@@ -95,13 +102,6 @@ export class ServicesComponent {
       label: 'matrix.dorm.social',
       url: '',
       note: 'tuwunel',
-      host: 'basalt',
-      status: 'active',
-    },
-        {
-      label: 'element.dorm.social',
-      url: 'https://element.dorm.social/',
-      note: 'element, web gui for matrix',
       host: 'basalt',
       status: 'active',
     },
