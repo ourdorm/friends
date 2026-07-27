@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface SignalGroup {
@@ -12,6 +12,7 @@ interface SignalGroup {
   standalone: true,
   imports: [RouterLink],
   templateUrl: './channels.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./channels.component.scss'],
 })
 export class ChannelsComponent {
