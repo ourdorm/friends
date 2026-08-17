@@ -36,8 +36,8 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
       '@webtui/css':
-        specifier: ^0.1.9
-        version: 0.1.9
+        specifier: ^0.1.10
+        version: 0.1.10
       express:
         specifier: ^5.2.1
         version: 5.2.1
@@ -1525,8 +1525,8 @@ packages:
     peerDependencies:
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  '@webtui/css@0.1.9':
-    resolution: {integrity: sha512-frEwcxRihw3VlmUxLzu5gsvp2KaPtETJvKKgCFHq+9KJ/kqZrgGoil9W56SOgW3T6/9CMtRG8fciU4yixGwPOg==}
+  '@webtui/css@0.1.10':
+    resolution: {integrity: sha512-iovJnGDbhi0vaaOjpG+i56HGKx5hHls8JhhQxwPTl5b5ddce7PO+r7F+S4EObYjQlaa1RfClahkmpiNF+R8y8w==}
 
   '@yarnpkg/lockfile@1.1.0':
     resolution: {integrity: sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==}
@@ -1550,6 +1550,11 @@ packages:
 
   acorn@8.17.0:
     resolution: {integrity: sha512-xRQbDb9BnwDafYNn6Vwl839DYVjqXYb1XVGtWAZ1kcDc6iwAL4hg3B1dZlRiuENFeO2H53gFG3in621AdERVAg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.18.0:
+    resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -4928,7 +4933,7 @@ snapshots:
     dependencies:
       vite: 7.3.6(@types/node@25.9.5)(jiti@1.21.7)(less@4.4.0)(sass@1.99.0)(terser@5.43.1)
 
-  '@webtui/css@0.1.9': {}
+  '@webtui/css@0.1.10': {}
 
   '@yarnpkg/lockfile@1.1.0': {}
 
@@ -4949,6 +4954,9 @@ snapshots:
       acorn: 8.17.0
 
   acorn@8.17.0: {}
+
+  acorn@8.18.0:
+    optional: true
 
   agent-base@7.1.4: {}
 
@@ -7039,7 +7047,7 @@ snapshots:
   terser@5.43.1:
     dependencies:
       '@jridgewell/source-map': 0.3.11
-      acorn: 8.17.0
+      acorn: 8.18.0
       commander: 2.20.3
       source-map-support: 0.5.21
     optional: true
