@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -16,7 +16,6 @@ interface ServiceLink {
   standalone: true,
   imports: [RouterLink, NgClass],
   templateUrl: './services.component.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./services.component.scss'],
 })
 export class ServicesComponent {
