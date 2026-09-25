@@ -15,18 +15,13 @@ interface SignalGroup {
   styleUrls: ['./channels.component.scss'],
 })
 export class ChannelsComponent {
-  discordInvite = 'https://discord.gg/mghfA6BveG';
+  discordInvite = 'https://discord.gg/Gygx3Y8CyN';
 
   signalGroups: SignalGroup[] = [
     {
       name: 'dorm.signal',
       url: 'https://signal.group/#CjQKIBxEA11NFTxoedwfB0BmVDlZCR80Lr-_18PJa8ahmZ1lEhBKjE3-GOfGT2I99htsg5nY',
       description: 'main group',
-    },
-    {
-      name: 'extra.dorm.signal',
-      url: 'https://signal.group/#CjQKIPO6ByCI1brq91pKt0YvvTlBiV5R01k8FdbmBQ1doli3EhAmF-fguQJDmwzs2iXDR4zj',
-      description: 'offtopic chat',
     },
   ];
 
