@@ -25,5 +25,5 @@ export class ChannelsComponent {
     },
   ];
 
-  dormmatrixInvite = 'https://matrix.to/#/#dormmatrix:matrix.dorm.social';
+  dormmatrixInvite = 'https://matrix.to/#/#entrance:matrix.dorm.social';
 }

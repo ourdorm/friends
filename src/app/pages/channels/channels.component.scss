@@ -68,3 +68,15 @@ section {
     text-decoration: underline dashed;
   }
 }
+.social-link {
+  display: flex;
+  align-self: flex-start;
+}
+.social-image {
+  display: flex;
+  align-self: flex-end;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
