@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^22.2.0",
     "@angular/platform-server": "^22.2.0",
     "@angular/router": "^22.2.0",
-    "@angular/ssr": "^22.2.0",
+    "@angular/ssr": "^22.2.1",
     "@catppuccin/palette": "^1.8.0",
     "@webtui/css": "^0.1.10",
     "express": "^5.2.1",
