@@ -15,4 +15,8 @@ footer {
     font-size: 0.875rem;
     font-family: 'Google Sans Code';
   }
+
+  @media (max-width: 600px) {
+    padding: 1rem 0.75rem calc(1rem + env(safe-area-inset-bottom));
+  }
 }

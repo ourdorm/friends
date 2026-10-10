@@ -9,13 +9,27 @@ header {
     width: 100%;
     max-width: 70ch;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     /* Center the links within the max-width container */
     gap: 1ch;
     font-family: 'Google Sans Code';
 
+    a {
+      /* Comfortable tap targets on touch screens */
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: 0 0.5ch;
+    }
+
     .sep {
       color: var(--ctp-surface2);
     }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.5rem 0.75rem;
   }
 }

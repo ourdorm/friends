@@ -18,7 +18,7 @@ section {
 .box {
   background: var(--ctp-mantle);
   border: 1px solid var(--ctp-surface0);
-  padding: 1rem;
+  padding: var(--box-padding, 1rem);
   margin: 1rem 0;
 
   h2 {
@@ -56,8 +56,8 @@ section {
     color: var(--ctp-mauve);
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    /* Pin to the first line so it stays aligned when the item wraps */
+    top: 0;
   }
 }
 
@@ -78,5 +78,8 @@ section {
 }
 .social {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 0.5rem 1rem;
 }

@@ -27,13 +27,6 @@ export class ServicesComponent {
       host: 'pages',
       status: 'active',
     },
-    {
-      label: 'dorm.social',
-      url: 'https://dorm.social',
-      note: 'our turtkey/fediverse instance',
-      host: 'jasper',
-      status: 'active',
-    },
     { label: 'git.elrant.team', url: 'https://git.elrant.team', note: 'forgejo', host: 'jasper', status: 'active' },
     {
       label: 'auth.dorm.social',
