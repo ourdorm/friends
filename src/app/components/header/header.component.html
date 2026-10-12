@@ -1,9 +1,9 @@
 <header>
   <nav>
-    <a routerLink="/">~</a>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">~</a>
     <span class="sep">|</span>
-    <a routerLink="/services">services</a>
+    <a routerLink="/services" routerLinkActive="active">services</a>
     <span class="sep">|</span>
-    <a routerLink="/channels">channels</a>
+    <a routerLink="/channels" routerLinkActive="active">channels</a>
   </nav>
 </header>

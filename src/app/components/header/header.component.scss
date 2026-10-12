@@ -22,6 +22,14 @@ header {
       align-items: center;
       min-height: 2.75rem;
       padding: 0 0.5ch;
+
+      &.active {
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: var(--ctp-mauve);
+        text-decoration-thickness: 1px;
+        color: var(--ctp-mauve);
+      }
     }
 
     .sep {
