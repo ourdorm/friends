@@ -64,8 +64,8 @@ importers:
         specifier: ^22.2.3
         version: 22.2.3
       '@angular/language-service':
-        specifier: ^22.2.3
-        version: 22.2.3
+        specifier: ^22.2.4
+        version: 22.2.4
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.13.0)
@@ -324,6 +324,10 @@ packages:
 
   '@angular/language-service@22.2.3':
     resolution: {integrity: sha512-n7LJ7NaHiC+NMHscCInhHTAvCsBLi8WfF47KuVv1eGj6rgFn1ZMpE81OBIWdJbSdytarwSU3KInaYESjao0ItA==}
+    engines: {node: ^22.22.3 || ^24.15.0 || >=26.0.0}
+
+  '@angular/language-service@22.2.4':
+    resolution: {integrity: sha512-68/nCIjlDzujoitDCM5n5zdd+Vi/TMTlVXO34XiqWgZjqhfO9410Cq9Y0m6o5LMGlPX6pQlpW/kPXb/oQMYNjg==}
     engines: {node: ^22.22.3 || ^24.15.0 || >=26.0.0}
 
   '@angular/platform-browser@22.2.3':
@@ -4593,6 +4597,8 @@ snapshots:
       typescript: 6.0.3
 
   '@angular/language-service@22.2.3': {}
+
+  '@angular/language-service@22.2.4': {}
 
   '@angular/platform-browser@22.2.3(@angular/common@22.2.3(@angular/core@22.2.3(@angular/compiler@22.2.3)(rxjs@7.8.2)(zone.js@0.16.3))(rxjs@7.8.2))(@angular/core@22.2.3(@angular/compiler@22.2.3)(rxjs@7.8.2)(zone.js@0.16.3))':
     dependencies:
