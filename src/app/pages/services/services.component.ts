@@ -64,13 +64,6 @@ export class ServicesComponent {
       status: 'active',
     },
     {
-      label: 'kinks.dorm.social',
-      url: 'https://kinks.dorm.social',
-      note: '...',
-      host: 'jasper',
-      status: 'active',
-    },
-    {
       label: 'element.dorm.social',
       url: 'https://element.dorm.social/',
       note: 'element, web gui for matrix',
